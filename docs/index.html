@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- cabeza de la pagina-->
+    <head>
+        <!--mi primera pagina web by Ali Jose-->
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Asloop</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/estilos.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <!--Inicio del body-->
+        <!--barra de arriba negra-->
+
+        <nav class="navbar navbar-default navbar-static-top">
+
+            <!--contenedor de la barra negra donde se guardan los botones-->
+            <div class="container">
+                <!--este header lo que hace es colocar el boton de la pagina principal-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--titulo del boton de la barra -->
+                    <a class="navbar-brand" href="index.html">AsLoop</a>
+                </div>
+
+                <!--botones colocados de Entradas Favoritos y Comentarios-->
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav"> 
+                        <li> <a href="#"> <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Entradas  </a> </li>
+                        <li> <a href="#"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Favoritos </a> </li>
+                        <li> <a href="#"> <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comentarios </a> </li>
+                    </ul>
+
+                    <!--Botones de Registro e Iniciar Sesion-->
+
+                    <ul class="nav navbar-nav navbar-right">  
+                        <li> 
+                            <a href="#"> 
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Usuarios Registrados: 10    
+                            </a> 
+                        </li>
+                        <li> <a href="registro.html"> Registro </a> </li>
+                        <li> <a href="#"> Iniciar Sesion </a> </li>                   
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+
+
+        <div class="container">
+
+            <div class="jumbotron">
+
+                <h1>AsLoop</h1>
+
+                <p>
+
+                    Live your dreams
+
+                </p>
+
+            </div>
+        </div>
+        
+        
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>  Búsqueda
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <input type="search" class="form-control" placeholder="¿Que desea buscar?">
+                                    </div>
+                                    <button class="form-control">
+                                        Buscar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <span class="glyphicon glyphicon-filter" aria-hidden="true"></span> Filtro
+                                </div>
+                                <div class="panel-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Archivo
+                                </div>
+                                <div class="panel-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+
+                        <div class="panel-heading">
+
+                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>  Ultimas Entradas
+
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <p>Todavia no hay entradas por mostrar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+    <!-- cierre del body-->
+</html>

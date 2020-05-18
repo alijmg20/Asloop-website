@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- cabeza de la pagina-->
+    <head>
+        <!--mi primera pagina web by Ali Jose-->
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <title>Registro</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/estilos.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <!--Inicio del body-->
+
+
+
+        <!--barra de arriba negra-->
+
+        <nav class="navbar navbar-default navbar-static-top">
+
+            <!--contenedor de la barra negra donde se guardan los botones-->
+            <div class="container">
+                <!--este header lo que hace es colocar el boton de la pagina principal-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--titulo del boton de la barra -->
+                    <a class="navbar-brand" href="index.html">AsLoop</a>
+                </div>
+
+                <!--botones colocados de Entradas Favoritos y Comentarios-->
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav"> 
+                        <li> <a href="#"> <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Entradas  </a> </li>
+                        <li> <a href="#"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Favoritos </a> </li>
+                        <li> <a href="#"> <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comentarios </a> </li>
+                    </ul>
+
+                    <!--Botones de Registro e Iniciar Sesion-->
+
+                    <ul class="nav navbar-nav navbar-right">  
+                        <li> 
+                            <a href="#"> 
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Usuarios Registrados: 10
+                            </a> 
+                        </li>
+                        <li> <a href="registro.html"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Registro </a> </li>
+                        <li> <a href="#"> <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Iniciar Sesion </a> </li>                   
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="text-center"> Registro </h1>
+
+            </div>
+        </div>
+        <div class="container">
+
+            <!--Contenedor del panel y explicacion de las instrucciones-->
+            <div class="col-md-6 text-center">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Informacion Importante
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <br>
+                        <p class="text-justify">
+                            AsLoop es un sitio para interactuar, conectarte y 
+                            conseguir gente nueva. Para registrarte llena los datos
+                            y proporciona informacion real, ya que es verificada a 
+                            través de tu correo electronico. Bienvenido a un mundo nuevo
+                        </p>
+                        <br>
+                        <a href="#"> ¿Estás registrado? </a>
+                        <br>
+                        <br>
+                        <a href="#"> ¿Olvidaste tu contraseña? </a>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 text-center">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Ingresa tu informacion.
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form"  action="registro.html">
+                            
+
+                            <!--nombre de usuario-->
+                            <div class="form-group">
+                                <label>
+                                    Nombre de usuario :
+                                </label>
+                                <input type="text" class="form-control" name="nombre" placeholder="nombre ">
+                            </div>
+
+                            <!--Correo electronico-->
+                            <div class="form-group">
+                                <label>
+                                    Correo electronico :
+                                </label>
+                                <input type="email" class="form-control" name="email" placeholder="ejemplo@example.com">
+                            </div>
+
+                            <!--Contraseña-->
+                            <div class="form-group">
+                                <label>
+                                    Contraseña :
+                                </label>
+                                <input type="password" class="form-control" name="clave" placeholder="contraseña">
+                            </div>
+                            <!--repetir la contraseña-->
+                            <div class="form-group">
+                                <label>
+                                    Repite la contraseña :
+                                </label>
+                                <input type="password" class="form-control" name="clave2" placeholder="repetir Contraseña">
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary" name="registrar"> Registrar</button>
+                            <button type="reset" class="btn btn-primary "> Limpiar</button>
+
+
+
+
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+    <!-- cierre del body-->
+</html>
